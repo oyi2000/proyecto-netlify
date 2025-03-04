@@ -1,3 +1,5 @@
-document.getElementById("boton").addEventListener("click", function() {
-    alert("¡Has descubierto más contenido!");
+document.querySelectorAll(".program-card").forEach(card => {
+    card.addEventListener("click", () => {
+        alert("Más información próximamente");
+    });
 });
