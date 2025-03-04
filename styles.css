@@ -1,64 +1,151 @@
+/* Estilo global */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #dfe9f3, #ffffff);
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Cabecera */
 header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+header h1 {
+  font-size: 2.5rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav {
+  margin-top: 10px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+nav a {
+  margin: 0 15px;
+  font-size: 1.1rem;
+  color: #fff;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sección Hero */
 .hero {
-    padding: 100px 20px;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
-    border-radius: 0 0 20px 20px;
+  background: url('tu-imagen-de-fondo.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
 }
 
-.content {
-    padding: 50px;
+.hero h1 {
+  font-size: 3rem;
 }
 
-.program-card {
-    display: inline-block;
-    margin: 10px;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+.cta-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.program-card:hover {
-    transform: scale(1.05);
+.cta-btn:hover {
+  background-color: #45a049;
 }
 
+/* Sección Sobre Nosotros */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.about h2 {
+  font-size: 2rem;
+}
+
+/* Sección de Servicios */
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+}
+
+/* Sección Contacto */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+}
+
+.contact p {
+  font-size: 1rem;
+}
+
+.contact a {
+  color: #4CAF50;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    margin-top: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+
+footer .socials a:hover {
+  color: #4CAF50;
 }
